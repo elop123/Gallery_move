@@ -9,8 +9,9 @@
     <link rel="icon" href="assets/images/Logo-Goth.svg">
 
     <script src="assets/js/modal.js" defer></script>
-    <script src="assets/js/validation.js" defer></script>
     <script src="assets/js/gallery.js" defer></script>
+    <script src="assets/js/validation.js" defer></script>
+    <script src="assets/js/booking-validation.js" defer></script>
 
     <style>
         h1 span {
@@ -28,28 +29,28 @@
 
 
             <div id="modalContent">
-                <!-- HER STARTER FORMEN (BEMÆRK: "novalidate" SKAL FJERNES ;0) -->
-                <form class="myform">
+                <!-- HER STARTER FORMEN -->
+                <form class="myform" onsubmit="return validateForm2();">
                     <fieldset>
                         <legend>Simpel formValidering</legend>
                         <label for="fname">Fornavn</label>
-                        <input type="text" id="fname" name="fname" required placeholder="Type Your First Name" />
+                        <input type="text" id="fname" name="fname"  placeholder="Type Your First Name" />
 
                         <label for="lname">Efternavn:</label>
-                        <input type="text" id="lname" name="lname" required placeholder="Type Your Last Name" />
+                        <input type="text" id="lname" name="lname" placeholder="Type Your Last Name" />
 
                         <label for="ldate">Dato:</label>
-                        <input type="date" id="ldate" name="ldate" required placeholder="date" />
+                        <input type="date" id="ldate" name="ldate"  placeholder="date" />
 
                         <label for="ltime">Tidpunkt:</label>
-                        <input type="time" id="ltime" name="ltime" required placeholder="date" />
+                        <input type="time" id="ltime" name="ltime"  placeholder="date" />
 
 
                         <label for="adresse">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="Type Your Email" />
+                        <input type="email" id="email" name="email"  placeholder="Type Your Email" />
 
                         <label for="password">Password:</label><area shape="" coords="" href="" alt="">
-                        <input type="password" id="password" name="password" required placeholder="Password" />
+                        <input type="password" id="password" name="password"  placeholder="Password" />
 
 
                         <input type="submit" value="Book table" />
@@ -71,18 +72,18 @@
 
 
             <div id="modalContent">
-                <!-- HER STARTER FORMEN (BEMÆRK: "novalidate" SKAL FJERNES ;0) -->
-                <form novalidate class="myform">
+                <!-- HER STARTER FORMEN  -->
+                <form  class="myform" onsubmit="return validateForm();">
                     <fieldset>
 
                         <label for="Sname">Navn:</label>
-                        <input type="text" id="Sname" name="Sname" required placeholder="Type Your Last Name" />
+                        <input type="text" id="Sname" name="Sname"  placeholder="Type Your Last Name" >
 
 
                         <label for="Spassword">Password:</label><area shape="" coords="" href="" alt="">
-                        <input type="password" id="Spassword" name="Spassword" required placeholder="Password" />
+                        <input type="password" id="Spassword" name="Spassword"  placeholder="Password" >
 
-                        <input type="submit" value="Sign in" />
+                        <input type="submit" value="Sign in" >
                     </fieldset>
                 </form>
             </div>
