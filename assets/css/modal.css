@@ -1,5 +1,5 @@
 .modal {
-  display: none; /* MODAL SHOULD HIDDEN BY DEFAULT */
+  display: block; /* MODAL SHOULD HIDDEN BY DEFAULT */
   position: absolute;
   z-index: 9999; /* Sit on top */
   left: 0;
@@ -8,7 +8,7 @@
   /* bottom: 0; */
   height: 100%;
   overflow: auto; /* Enable scroll if needed */
-  background-color: #000000c6; /* TRANSPARENT FALLBACK FILL */
+  background-color: #141414b3; /* TRANSPARENT FALLBACK FILL */
 }
 .modal > div {
   /*FIRST DIVERSION IN ".modal"*/

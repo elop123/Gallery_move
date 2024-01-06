@@ -1,6 +1,7 @@
 .myform {
   background-color: var(--black);
   color: var(--light);
+  
 }
 /* "FIELDSETTET" ER "FLEXCONTAINEREN I DETTE TILFÆLDE" */
 .myform fieldset {

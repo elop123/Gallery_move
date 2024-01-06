@@ -1,5 +1,6 @@
 #Cookie_container {
   color: aliceblue;
+  overflow:none;
 }
 
 .Cookie_button_ok {
